@@ -1,0 +1,294 @@
+
+/*reset开始*/
+
+html, body { color: rgb(51, 51, 51); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0px; padding: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body{margin:0px auto;}
+table { border-collapse: collapse; border-spacing: 0px; }
+fieldset, img { border: 0px none; }
+iframe { display: block; }
+del { text-decoration: line-through; }
+address, caption, cite, code, dfn, em, th, var, i, b { font-style: normal; font-weight: 500; }
+ol, ul { list-style: outside none none; }
+h1, h2, h3, h4, h5, h6, b { font-size: 100%; font-weight: normal; }
+q::before, q::after { content: ""; }
+img, input, select { vertical-align: middle; display: inline-block; }
+embed, object, a, button, input, select, textarea { outline: medium none; }
+html, body { min-height: 100%; }
+body, button, input, select, textarea { font-size: 12px; font-family: "Helvetica Neue",Helvetica,Roboto,Arial,"PingFang SC","Noto Sans CJK SC","Source Han Sans CN","Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;}
+input, select, textarea { font-size: 100%; }
+ins, a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a{ color: #333;}
+@font-face {
+	font-family: "iconfont";
+	src: url('iconfont.eot') format("embedded-opentype"), url('iconfont.woff') format("woff"), url('iconfont.ttf') format("truetype"), url('iconfont.svg') format("svg");
+}
+.w-icon, #fslist .topbg, #fslist .btmbg, #rightBar .redpackage, .m-slogn, .m-slogn-new, .m-shopcartnew .wrap {background: transparent url('icon1.png') no-repeat scroll ;}
+.iconfont { font-family: "iconfont" ! important; font-size: 16px; font-style: normal; }
+.w-icon, #fslist .topbg, #fslist .btmbg, #rightBar .redpackage, .m-slogn, .m-slogn-new, .m-shopcartnew .wrap { background: transparent url('icon1.png') no-repeat scroll ; }
+.h { color: rgb(242, 46, 0) ! important; } /*红色高亮*/
+.clearfix::before { content: " "; display: block; height: 0px; clear: both; } /*清除浮动*/
+.clearfix::after { content: " "; display: block; height: 0px; clear: both; }
+.J-menu{position:relative; }
+/*reset结束*/
+
+/*topnotice-顶部海报*/
+#topnotice{background: rgb(210, 33, 71) none repeat scroll 0% 0%; display: block;}
+
+/*topNav开始*/
+#topNav {position:relative; z-index: 104; background: rgb(242, 242, 242) ; border-bottom: 1px solid rgb(237, 237, 238); color: rgb(102, 102, 102);}
+#topNav a { color: #666; }   /*此处a和body大部不同故重写*/
+#topNav a:hover { color: rgb(227, 20, 54); text-decoration: none; }
+#topNavWrap {width:1090px; margin:0 auto; height: 30px; line-height: 30px; color: #666;}
+#topNavLeft {float:left;}
+.login {margin-left:20px;}
+.sep { color: rgb(204, 204, 204); margin: 0 12px;}
+#topNavLeft2 {float:left; margin-left: 30px;}
+#topNavLeft2 .down-panel{z-index:99; position: absolute; left: -30px; top: 32px; background-color:#fff;  box-shadow: 0 1px 1px rgba(0,0,0,0.12); padding: 4px 15px 12px 14px; display: none;}
+#topNavLeft2  .txt { font-size: 14px; color: rgb(227, 20, 54); line-height: 32px; font-weight: normal; white-space: nowrap; }
+.J-menu .down-panel .second-menu a { display: block;}
+.Personal .down-panel, .service .down-panel, .more .down-panel{position: absolute;
+left: -20px;top: 30px;border-top: 0px none;box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);padding: 4px 15px 12px 14px;display: none;background: rgb(255, 255, 255) none repeat scroll 0% 0%;border: 1px solid rgb(232, 232, 234); }
+.down-panel a {word-wrap: normal; white-space: nowrap;height: 28px;line-height: 28px; cursor: pointer;}
+#topNavRight {float:right;}
+#topNavRight li{display: inline-block;}/*也可以对li设置左浮动*/
+/*topNav结束*/
+
+/*docHead开始*/
+#docHead {z-index: 103;}/*此处height:100px不用设置，因为内层已经设置了*/
+#docHeadWrap { position: relative; width: 1090px; height: 100px; margin: 0 auto;}
+#docHeadWrap .icon{position:absolute; left:0px;}
+.m-searchiptbox { position: absolute; right: 130px; top: 24px; z-index: 73; }
+#topSearchBtn {display: inline-block; height: 34px;width: 50px; font-size: 21px;line-height: 34px; color: rgb(255, 255, 255); text-align: center;cursor: pointer;}
+#topsearch, #topSearchBtn { border-radius: 0px 3px 3px 0px;}
+.w-icon-26 { width: 14px;height: 14px; background-position: -466px -667px;}
+.w-icon-27 {background-position: -490px -658px;}
+#topsearch, #topSearchBtn { border-radius: 0px 3px 3px 0px; }
+#topsearch { width: 405px; height: 34px; padding-left: 1px; background-color: rgb(51, 51, 51); }
+#topsearch .wrap { float: left; margin: 1px 0px; padding: 4px 5px 4px 30px; background-color: rgb(255, 255, 255); }
+#topSearchInput { width: 320px; height: 24px; line-height: 24px; border: 0px none; font-size: 13px; }
+#topSearchBtn { display: inline-block; height: 34px; width: 50px; font-size: 21px; line-height: 34px; color: rgb(255, 255, 255); text-align: center; cursor: pointer; }
+#topSearchBtn:hover { background-color: rgb(68, 68, 68); }
+#topsearch .w-icon-26 { position: absolute; left: 10px; top: 9px; }
+.w-icon-27 { background-position: -490px -658px;}
+.m-suggestlist { line-height: 22px; margin-top: 2px; width: 358px; height: 22px; overflow: hidden; }
+.m-suggestlist li,.m-suggestlist .sep { float: left; white-space: nowrap; }
+.m-suggestlist li a, .m-suggestlist li a:hover { color: rgb(153, 153, 153); }
+.m-suggestlist li .sep { margin: 0px 10px; color: rgb(153, 153, 153); }
+.m-searchhint { position: absolute; top: 34px; left: 0px; width: 356px; background-color: rgb(255, 255, 255); }
+.m-searchhint ul { padding: 6px 0px; border-width: medium 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(204, 204, 204) rgb(204, 204, 204); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.m-shopcartnew, .m-shopcartnew:link, .m-shopcartnew:visited, .m-shopcartnew:hover {color: rgb(255, 255, 255);text-decoration: none;}
+.m-shopcartnew {display: block; position: absolute; top: 24px; right: 0px; width: 110px; height: 34px; background-color: rgb(51, 51, 51);line-height: 34px;font-size: 13px;text-align: center;border-radius: 3px;}
+.m-shopcartnew .wrap { display: inline-block; padding-left: 24px;background-position: -957px -157px;}
+
+/*topTabBox开始*/
+#topTabBox {height: 40px;border-bottom: 2px solid #333;background: #fff;position: relative;z-index: 102;}
+#topTab {position: relative; width: 1090px; margin: 0 auto; height:40px; line-height: 40px;background: #fff;}
+#funcTab { z-index: 72; }
+#funcTab li {float: left;width: 110px;}
+/*底部红色的滑块*/
+#funcTab li.slider {display: block; position: absolute;bottom: 0; left: 0; height: 4px; background:red;-webkit-transition: all 0.5s; transition: all 0.5s;}
+#funcTab li a { display: block; text-align: center;font-size: 14px;}/*让字行内居中的方法*/
+#funcTab .toplevel {font-weight: bold;}
+.topTabBoxFixed #funcTab .m-ctgcard {top: 40px;left: -180px; border-top: 1px solid #ddd; box-shadow: 0 7px 10px rgba(0,0,0,.2);}
+#funcTab .m-ctgcard {transition: height 0.4s;position: absolute;left:0px; z-index: 75;width: 1090px;overflow: hidden;max-height: 400px;background: #fff;  border: 1px solid #ccc; border-width: 0 1px 1px 1px;}
+#funcTab .m-ctglist { margin: 10px 0 20px 20px;width: 600px; max-height: 370px; overflow: hidden;}
+.f-fl, .fl {float: left;}
+#funcTab .m-ctgtbl {width: 100%;}
+table {border-collapse: collapse; border-spacing: 0;}
+#funcTab .m-ctgtbl td { vertical-align: top;}
+#funcTab .m-ctglist .item {display: inline-block;padding: 0px; margin: 0 25px 10px 0; vertical-align: top; width: 270px;
+ height: auto;  line-height: normal;overflow: hidden;}
+
+#funcTab .m-ctglist .item .title { height: 34px; line-height: 34px;font-size: 14px;font-weight: bold; border-bottom: 1px solid #EAEAEA;}
+#funcTab .m-ctglist a.cat2 {display: inline; color: #333;  text-align: left;}
+#funcTab .m-ctglist .ctgnamebox { margin-left: -8px;}
+#funcTab .m-ctglist .ctgnamebox .f-fcred3 { color: rgb(51, 51, 51);}
+#funcTab .m-ctglist .ctgnamebox a {  display: inline-block;height: 14px; line-height: 14px;padding: 0 8px 0 10px; margin-top: 12px; border-left: 1px solid #CCC;font-size: 13px;}
+.topBgWrapPos { position: relative;}
+#funcTab .m-brandbox {margin: 10px 0 20px;width: 246px;}
+
+.f-fl, .fl {float: left;}
+#funcTab .m-brandbox .title {height: 34px;line-height: 34px; font-size: 14px;font-weight: bold;}
+#funcTab .m-brandbox .brandlist a { float: left; display: inline-block;height:80px; padding: 0;}
+#funcTab a, #funcTab a:link, #funcTab a:visited { color: #333;  text-decoration: none;}
+#funcTab .m-brandbox .brandlist img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(234, 234, 234);
+    margin: -1px 0px 0px -1px;
+}
+.banner { width: 100%; height: 400px; position: relative;margin: 0px auto; }
+.banner .slide { width: 100%; height: 400px; float: left;  overflow: hidden; position: relative; }
+.banner .slide ul.slide-img { width: 100%; height: 400px; position: absolute; overflow: hidden; }
+.banner .slide ul.slide-img li { width: 100%; height: 400px; overflow: hidden; }
+.banner .slide .slide-btn{width:1090px; margin: 0 auto;position: relative;}
+.banner .slide .slide-btn i { display: none; width: 40px; height: 80px; font-size: 60px; color: white; background-color:#A9A9A9;opacity: 0.7; cursor: pointer; position: absolute; top: 160px; vertical-align:center; }
+ .banner .slide .slide-btn  .slide-next{position: absolute; right:0px;}
+.banner .slide .tab-nav { position: absolute; bottom: 0px; left: 50%; }
+.banner .slide .tab-nav li { float: left; margin-right: 3px; cursor: pointer; font-size: 22px; color: rgb(153, 153, 153); }
+.banner .slide .tab-nav li.current { color: rgb(0, 204, 206); }
+.m-slogan {width: 1090px;height:41px;margin: 0px auto;}
+.m-slogan .slst {margin: 20px 40px 32px -30px;}
+.m-slogan .slst li { float: left;margin-left: 80px;font-size: 14px;}
+.m-slogan li a { display: block; height: 40px; text-decoration: none;}
+.m-slogan .icn { float: left;width: 40px; height: 40px;margin-right: -40px;color: rgb(51, 51, 51); font-size: 37px; line-height: 40px;background: transparent url('slogan.png') no-repeat scroll 0px 0px;}
+.m-slogan .slst .wrap { float: left;margin-left: 55px;}
+.wrap {white-space: normal;word-wrap: break-word;}
+.m-slogan .slst .slogan {display: block; height: 20px; color: rgb(51, 51, 51); font-weight: bold;}
+.m-slogan .slst .desc {display: block;color: rgb(153, 153, 153);white-space: nowrap;}
+.m-slogan .slst { margin: 20px 40px 32px -30px;}
+.m-slogan a:hover{background:	#E0E0E0;}
+/*此处有个悬浮变红色没有做,先做成了个灰色背景代替*/
+.f-cb::after, .clearfix::after {visibility: hidden;display: block; font-size: 0px; content: " "; clear: both; height: 0px;}
+.mainBgWrap {position: relative;width: 1090px;margin:32px auto 0 auto;min-height: 600px;}
+#indexleft {margin-left: -664px;position: absolute;top: 0px; left: 50%;z-index: 99;}
+#indexleft img{display:block;}
+.m-rightbar {position: absolute;width: 97px;border: 1px solid rgb(234, 234, 234);
+	border-bottom:1px solid white;/*去除底部多余的那条线*/top: 270px;}
+.m-rightbar a {display: block;width: 97px; height: 38px;border-bottom: 1px solid #eaeaea;background: #fff;font-size: 14px; cursor: pointer; text-align: center;line-height:38px;}
+.m-rightbar a, .m-rightbar a:hover {color: #333;text-decoration: none;}
+.m-rightbar a:hover {background:#DCDCDC;font-size:15px;}
+.m-rightbar li, .m-rightbar a { float: left;}
+.m-rightbar .txt {display: block;}
+.checkin .m-notice {position: absolute;left: -100px;top: 10px;width: 66px;display: none; border-radius: 4px;}
+.shopcart .m-notice {position: absolute;left: -100px; top: 55px;width: 66px;display: none;border-radius: 4px;}
+.m-notice {background: #fff;text-align: center; color: #333;border: solid 1px #ededee;padding: 10px;}
+.m-halfbanner-1 {margin: 0px 0px 0px -11px;}
+.m-rightbar .m-app2-1 .qrcode {display: none;position: absolute;left: -110px;top:90px;width: 105px; height: 142px;}
+#rightNav{right: 338.5px;position: absolute;top: 0px;display: block;z-index: 99;width: 88px;border: 1px solid #eaeaea;border-bottom:1px solid white;/*去除底部多余的那条线*/left: 50%;margin-left: 565px;}
+#rightNav a{display: block;width: 88px;height: 48px;line-height:48px;border-bottom: 1px solid #eaeaea;
+background: #fff;font-size: 14px;cursor: pointer;text-align: center;text-decoration: none;}
+#rightNav a:hover {background:black;color:white;font-size:16px;text-decoration: none;box-shadow: 2px 2px 2px 2px #808080; height: 50px;line-height:50px;}
+#rightNav .rightSlider {
+  display: block;
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+display:none;
+  left: 0;
+  width: 4px;
+  height: 49px;
+  background:#696969;
+   -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+
+}
+#show_pic .showImg {width: 1920px;height: 400px;}
+.m-halfbanner-1 li, .m-halfbanner-1 img {width: 356px;}
+.m-halfbanner-1 li { margin: 0px 0px 10px 11px;float:left;}
+img, input, select {vertical-align: middle; display: inline-block;}
+.m-halfbanner-2{width:1100px;}
+.m-halfbanner-2 li, .m-halfbanner-2 img { width: 535px;}
+.m-halfbanner-2  li {margin: 0px 0px 0px 10px;float:left;}
+.m-recomds-new ul { box-shadow: none; border: 1px solid rgb(234, 234, 234);}
+.m-recomds-new li {width: 271px;height: 350px; font-size: 12px;}
+.m-recomds.m-recomds-new h2{margin:37px 0 10px 0;}
+.w-tit1-1 { font-size: 22px; color: rgb(153, 153, 153);position: relative;}
+.w-tit1 {line-height: 32px;margin: 37px 0px 10px;}
+.w-tit1-1 .big { font-size: 22px;color: rgb(51, 51, 51);font-weight: bold;}
+.m-recomds-new .txt { height: 79px;}
+.m-recomds li{float:left;border-right: 1px solid rgb(234, 234, 234);}
+.m-recomds .pic { position: relative;display: block; text-align: center;cursor: pointer;}
+.m-recomds-new .flag {position: absolute;left: 10px; top: 10px;}
+.m-recomds .txt { position: relative;margin: 0px 15px;}
+.m-recomds-new .tit { font-size: 12px; line-height: 18px;height: 36px;}
+.m-recomds .tit a, .m-recomds .tit a:hover {color: rgb(51, 51, 51);}
+.m-recomds-new .shorttit { font-weight: bold;}
+.m-recomds-new .shorttit, .m-recomds-new .introduce {white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height: 18px;}
+.m-recomds-new .price strong {position: relative; top: 1px;}
+.m-recomds .price strong {margin-right: 5px;color: rgb(227, 20, 54);font-size: 20px;line-height: 20px;}
+.m-recomds .price strong .symbol {font-size: 14px;}
+.m-recomds-new .price .item2 {margin: 0px 8px 0px 0px;position: relative; top: 1px;}
+.m-recomds-new .price .item3 {margin: 0px 3px 0px 0px;}
+.w-comblabel {display: inline-block;border: 1px dotted rgb(227, 20, 54);padding: 1px 2px;color: rgb(227, 20, 54);}
+.m-brands ul { border: 1px solid rgb(234, 234, 234);background: rgb(255, 255, 255) none repeat scroll 0% 0%;}
+.m-brands li {float: left;width: 271px;height: 380px;border-right: 1px solid rgb(234, 234, 234); font-size: 14px;text-align: center;}
+.m-brands .pic {display: block; height: 100%;}
+.m-brands a, .m-brands a:hover { color: rgb(51, 51, 51);text-decoration: none;}
+.m-brands .imgs { position: relative;}
+.m-brands .logo { position: absolute;bottom: 0px;left: 50%;margin: 0px 0px -40px -40px;border-radius: 50%;border: 1px solid rgb(234, 234, 234);background: rgb(255, 255, 255) none repeat scroll 0% 0%;}
+.m-brands .txt {margin: 50px 15px 0px;}
+.m-brands .tit {font-size: 16px;font-weight: bold;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.s-fc2, .s-fc2:hover, a:hover .s-fc2 {color: rgb(102, 102, 102);}
+.w-tit1-1 {font-size: 22px; color: rgb(153, 153, 153); position: relative;}
+.w-tit1 {line-height: 32px; margin: 37px 0px 10px;}
+.m-productfloor .w-tit1 .tit { margin-right: 20px;}
+.m-productfloor .w-tit1 .tit, .w-taglist { float: left;}
+.w-tit1-1 .big { font-size: 22px;color: rgb(51, 51, 51);}
+.w-tit1 .big {font-weight: bold;}
+.w-taglist {position: relative; top: 2px;font-size: 14px;color: rgb(153, 153, 153);}
+.m-productfloor .w-tit1 .tit, .w-taglist {float: left;}
+.w-taglist li {float: left;}
+.u-btn-more, .u-btn-more:hover {color: rgb(102, 102, 102);}
+.u-btn-more {position: absolute; right: 0px;top: 2px;font-size: 14px;}
+.m-productfloor .partl, .m-productfloor .partm, .m-productfloor .party { float: left; position: relative;}
+.m-productfloor .cont {border-width: 2px 1px 1px 0px;border-style: solid solid solid none;border-color: rgb(51, 51, 51) rgb(234, 234, 234) rgb(234, 234, 234) -moz-use-text-color;-moz-border-top-colors: none; -moz-border-right-colors: none;
+-moz-border-bottom-colors: none;-moz-border-left-colors: none; border-image: none; background: rgb(255, 255, 255) none repeat scroll 0% 0%;}
+.w-secondlist {position: absolute;left: 26px; top: 24px;}
+.w-secondlist li { float: left;margin: 0px 10px 10px 0px;}
+.w-secondlist li, .w-secondlist li a {width: 58px;height: 58px;}
+.w-secondlist li a {display: block;height: 36px;padding: 11px 0px;overflow: hidden;font-size: 12px;color: rgb(51, 51, 51);
+border-radius: 50%; background: rgb(255, 255, 255) none repeat scroll 0% 0%;}
+.w-secondlist li, .w-secondlist li a { width: 58px;}
+.w-secondlist .txt {display: table-cell;text-align: center;vertical-align: middle; width: 58px;height: 36px;overflow: hidden; line-height: 18px;}
+.m-productfloor .partm {width: 600px;}
+.w-activlist li {float: left;text-align: center;border-style: solid;border-color: rgb(234, 234, 234); -moz-border-top-colors: none; -moz-border-right-colors: none;-moz-border-bottom-colors: none; -moz-border-left-colors: none;border-image: none;border-width: 0px 1px 1px 0px;}
+.w-activlist li, .w-activlist li a { width: 299px; height: 220px;}
+.w-activlist li a {display: block;padding: 20px 0px 0px;height: 200px;}
+.w-activlist li, .w-activlist li a {width: 299px;}
+.w-activlist a, .w-activlist a:hover {color: rgb(51, 51, 51);text-decoration: none}
+.w-activlist .tit {font-size: 16px;font-weight: bold;line-height: 22px;margin: 0px 10px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.w-activlist .desc {font-size: 14px;line-height: 20px;margin: 0px 10px 14px;white-space: nowrap; text-overflow: ellipsis;
+overflow: hidden;}
+.s-fc2, .s-fc2:hover, a:hover .s-fc2 {color: rgb(102, 102, 102);}
+.m-productfloor .party {padding: 0 0 0 20px; width: 200px;}
+.m-prolist .title {font-size: 16px; line-height: 40px;padding: 10px 0 0; color: #333; font-weight: bold;}
+.m-prolist .prolist { position: relative;width: 100%; height: 356px; overflow: hidden;}
+.m-prolist .itemsale {border-bottom: 1px dotted #eaeaea; padding: 0 0 10px;margin: 0 0 10px;}
+.m-prolist .itemsale .pic {position: relative; float: left; margin: 0 10px 0 0;}
+.m-prolist .itemsale .tit { line-height: 18px; height: 36px; overflow: hidden;}
+.m-prolist .itemsale .tit a, .m-prolist .itemsale .tit a:hover {color: #666;}
+.m-prolist .itemsale .curprice {margin: 6px 0 0;font-size: 12px; color: #E31436;}
+.m-prolist .itemsale .curprice strong { font-size: 14px; font-weight: bold;}
+.m-prolist .itemsale .curprice .item2 { color: #999; margin: 0 0 0 5px;}
+.m-prolist .tab-nav{position: absolute; bottom:-20px; left: 50%; } 	
+.m-prolist .tab-nav li{float: left; margin-right: 4px; cursor: pointer; font-size: 14px; color: rgb(153, 153, 153);}
+.m-prolist .tab-nav  .current {color: #000000;}
+#docFoot { margin: 80px 0 0;}
+.footBgWrap { background: #fff;border-top: 1px solid #eaeaea;}
+.footBgWrap .box {width: 1090px; margin: 0 auto;}
+#btmlist { padding: 40px 0;border-bottom: 1px solid #eaeaea;}
+#btmlist li { float: left;width: 272px;}
+#btmlist li i { float: left; margin: 0 12px 0 0;}
+#btmlist .tit { font-size: 18px; font-weight: bold;}
+
+#btmlist li .desc { font-size: 14px;}
+#btmlist li .tit, #btmlist li .desc { display: block; line-height: 22px;}
+.w-icon-23 {width: 44px; height: 44px;background-position: -751px 0;}
+#guideList {padding: 40px 0 60px;}
+#guideList .first {width: 220px;padding-right: 40px;padding-left: 0;}
+#guideList .bd_none {border: none;}
+#guideList .first a, #guideList .first a:hover { text-decoration: none;}
+#guideList .logokaola, #guideList .logokaola:hover { color: #E31436;}
+#guideList .logokaola {display: block; height: 43px; width: 200px;margin-bottom: 20px;outline: none; cursor: pointer;z-index: 9; font-size: 38px; line-height: 45px;}
+#guideList .focuson{margin-top:40px;margin-left:10px;}
+#guideList li {float: left; width: 105px;padding: 0px 0px 0px 13px;height: 128px;border-left: 1px solid rgb(234, 234, 234);}
+#guideList li dt { margin: -4px 0px 10px;}
+#guideList li dt em {font-size: 18px;font-weight: normal;}
+#guideList li dd { line-height: 24px;}
+#guideList .last {margin-left: 10px;}
+#guideList .item { width: 108px;padding: 0px;text-align: center;float: left;}
+#guideList .bd_none {border: medium none;}
+#aboutNEST, #aboutNEST a, #aboutNEST a:hover {color: rgb(194, 194, 194);}
+#aboutNEST {padding: 20px 0px;background: rgb(51, 51, 51) none repeat scroll 0% 0%;line-height: 26px;text-align: center;}
+.m-license {margin-left: 20px;}
+#KXYZ img {margin-top: 5px;border-radius: 5px;width: 80px;height: 30px;}
+.u-shield img {height: 30px;margin: 5px 0px 0px 10px;}
+.m-appbanner2 {position: fixed;left: 0px;bottom: 0px;width: 100%;height: 100px;z-index: 999; text-align: center; background: rgba(51, 51, 51, 0.82) none repeat scroll 0% 0%;}
+.m-appbanner2 .cont {position: relative;width: 960px; margin: 0px auto;padding: 8px 0px 0px;}
+.m-appbanner2 a {display: block;}
+.m-appbanner2 img {width: 960px;}
+.m-appbanner2 .close {position: absolute;right: -15px;top: -7px;width: 25px;height: 25px;cursor: pointer;font-size:20px; border-radius:50%;background-color:#DC143C;color:white;}
